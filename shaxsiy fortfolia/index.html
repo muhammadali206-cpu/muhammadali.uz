@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Muxammad Ali — Web Dasturchi & Dizayner</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Caveat:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="glow"></div>
+  <header>
+    <a href="#home" class="brand"><span class="logo">MA</span><span><b>Muxammad Ali</b><small>Web Developer &amp;
+          Designer</small></span></a>
+    <nav id="nav"><a href="#home" class="on">Bosh sahifa</a><a href="#about">Men haqimda</a><a
+        href="#skills">Ko‘nikmalar</a><a href="#projects">Loyihalar</a><a href="#contact">Bog‘lanish</a></nav>
+    <div class="hr">
+      <button class="ib" id="theme" aria-label="Rejimni almashtirish">🌙</button>
+      <a class="btn p tg" href="https://t.me/muhammadali_uo" target="_blank" rel="noopener">✈ Telegram</a>
+      <button class="ib burger" id="burger" aria-label="Menyu">☰</button>
+    </div>
+  </header>
+
+  <section id="home">
+    <canvas id="fx"></canvas>
+    <svg class="city" id="cityS" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#14306e" />
+          <stop offset="1" stop-color="#050a1a" />
+        </linearGradient>
+      </defs>
+      <g fill="url(#cg)">
+        <rect x="20" y="150" width="60" height="150" />
+        <rect x="90" y="100" width="50" height="200" />
+        <rect x="150" y="170" width="70" height="130" />
+        <rect x="240" y="80" width="55" height="220" />
+        <rect x="310" y="140" width="80" height="160" />
+        <rect x="420" y="110" width="50" height="190" />
+        <rect x="760" y="130" width="70" height="170" />
+        <rect x="840" y="60" width="55" height="240" />
+        <rect x="910" y="150" width="80" height="150" />
+        <rect x="1000" y="100" width="60" height="200" />
+        <rect x="1075" y="160" width="100" height="140" />
+        <path d="M600 0l6 120h-12zM590 120h20l10 180h-40z" />
+        <circle cx="600" cy="130" r="14" />
+      </g>
+      <g fill="#5fb8ff" opacity=".7">
+        <rect x="100" y="120" width="4" height="4" />
+        <rect x="250" y="110" width="4" height="4" />
+        <rect x="255" y="150" width="4" height="4" />
+        <rect x="850" y="90" width="4" height="4" />
+        <rect x="1010" y="130" width="4" height="4" />
+        <rect x="430" y="140" width="4" height="4" />
+        <rect x="330" y="180" width="4" height="4" />
+        <rect x="930" y="190" width="4" height="4" />
+      </g>
+    </svg>
+    <div class="hero">
+      <div>
+        <div class="rv in">Salom, men 👋</div>
+        <h1>Muxammad Ali</h1>
+        <div class="role"><b id="typ"></b></div>
+        <p class="d">Men zamonaviy texnologiyalar yordamida insonlarga foyda keltirishga intilaman. Dasturlash, dizayn
+          va innovatsiya — mening nafaqat kasbim, balki hayot uslubimdir. Har bir kod — yangi imkoniyat, har bir loyiha
+          — kelajak sari bir qadam.</p>
+        <div class="script quote-h">“Katta orzular katta mehnat bilan amalga oshadi.”</div>
+        <div class="btns"><a class="btn p" href="#projects">Loyihalarimni ko‘rish</a><a class="btn" href="#contact">Men
+            bilan bog‘lanish</a></div>
+        <div class="soc"><a href="https://t.me/muhammadali_uo" aria-label="Telegram">TG</a><a
+            href="https://www.instagram.com/websait.uz?stkn=azZyejlhb2xlczBi&amp;utm_source=qr"
+            aria-label="Instagram">IG</a><a href="https://github.com/" aria-label="GitHub">GH</a><a
+            href="https://youtube.com/" aria-label="YouTube">YT</a></div>
+      </div>
+      <div class="avatar"><img src="assets/img1.jpg" alt="Muxammad Ali"></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="ab">
+        <div class="rv">
+          <h2>O‘zim haqimda</h2>
+          <p>Men Muxammad Ali. Web dasturlash, dizayn va yangi texnologiyalarga qiziqaman. Har kuni yangi bilim olishga,
+            o‘zimni rivojlantirishga va insonlarga foydali loyihalar yaratishga intilaman.</p>
+          <p>Muvaffaqiyat bir kunda kelmaydi. U har kuni qilingan kichik harakatlar, sabr va mehnat natijasida
+            yaratiladi.</p>
+          <div class="info">
+            <div class="glass"><small>Yoshim</small><b>18</b></div>
+            <div class="glass"><small>Joylashuv</small><b>O‘zbekiston</b></div>
+            <div class="glass"><small>Ta’lim</small><b>Maktab</b></div>
+          </div>
+        </div>
+        <div class="glass ws rv"><img src="assets/img2.jpg" alt="Dasturchi ish joyi"></div>
+      </div>
+      <blockquote class="glass rv script" style="font-size:28px">“Bugungi kichik qadamlar — ertangi katta natijalar.”
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Mening ko‘nikmalarim</h2>
+      <div class="sk" id="skg"></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Men yaratgan loyihalar</h2>
+      <div class="pj" id="pjg"></div>
+    </div>
+  </section>
+
+  <section class="big">
+    <h2>Orzular faqat orzu bo‘lib qolmasligi uchun har kuni bir qadam tashlash kerak. Bugun o‘rgangan bilimimiz —
+      ertangi imkoniyatimiz.</h2>
+    <div class="script">“Sabr — kuch, mehnat — yo‘l, muvaffaqiyat — manzil.”</div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap ct">
+      <div>
+        <h2>Keling, birgalikda yangi loyiha boshlaymiz!</h2>
+        <p>Agar sizda loyiha, taklif yoki savol bo‘lsa, men bilan bog‘laning. Yangi g‘oyalarni birgalikda haqiqiy
+          loyihaga aylantiramiz.</p>
+        <div class="btns"><a class="btn p" href="https://t.me/muhammadali_uo" target="_blank"
+            rel="noopener">Telegram</a><a class="btn"
+            href="https://www.instagram.com/websait.uz?stkn=azZyejlhb2xlczBi&amp;utm_source=qr" target="_blank"
+            rel="noopener">Instagram</a><a class="btn" href="mailto:hello@example.com">Email</a></div>
+      </div>
+      <form class="glass" id="cform"><input name="n" placeholder="Ism" required><input name="e" type="email"
+          placeholder="Email" required><textarea name="m" rows="4" placeholder="Xabar" required></textarea><button
+          class="btn p" type="submit">Yuborish</button>
+        <div id="ok" role="status"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="fr">
+      <div class="brand"><span class="logo">MA</span><span><b>Muxammad Ali</b><small>Web Developer &amp;
+            Designer</small></span></div>
+      <div class="fn"><a href="#home">Bosh sahifa</a><a href="#about">Men haqimda</a><a href="#projects">Loyihalar</a><a
+          href="#contact">Bog‘lanish</a></div>
+      <div class="soc" style="margin:0"><a href="https://t.me/muhammadali_uo">TG</a><a
+          href="https://www.instagram.com/websait.uz?stkn=azZyejlhb2xlczBi&amp;utm_source=qr">IG</a><a
+          href="https://github.com/">GH</a><a href="https://youtube.com/">YT</a></div>
+    </div>
+    <small>© 2026 Muxammad Ali. Barcha huquqlar himoyalangan.</small>
+    <div class="script" style="font-size:22px;margin-top:8px">Dream • Code • Create</div>
+  </footer>
+
+  <button class="ib" id="top" aria-label="Tepaga">↑</button>
+
+  <div id="modal">
+    <div class="glass">
+      <h3 id="mt"></h3>
+      <div class="tags" id="mg"></div>
+      <p id="md"></p><button class="btn p" id="mc">Yopish</button>
+    </div>
+  </div>
+
+  <div id="bot">
+    <div id="win" class="glass" role="dialog" aria-label="AI Yordamchi">
+      <div class="ch">
+        <div class="av">🤖</div>
+        <div><b>AI Yordamchi</b><small>● Onlayn</small></div>
+      </div>
+      <div id="msgs"></div>
+      <div class="qk" id="qk"></div>
+      <form class="cf" id="cf"
+        style="padding:10px;border:0;border-top:1px solid var(--bd);background:none;flex-direction:row;border-radius:0">
+        <input id="ci" placeholder="Savolingizni yozing..." autocomplete="off"><button aria-label="Yuborish">➤</button>
+      </form>
+    </div>
+    <button id="fab" aria-label="AI Yordamchi">🤖<i></i></button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
